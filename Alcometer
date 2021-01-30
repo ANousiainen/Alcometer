@@ -16,6 +16,8 @@ export default function App() {
     let litres = calc_litres(bottles);
     let grams = alcograms(litres);
     let burnt_grams = alcograms(calc_litres(1)) * time;
+    
+    // Tehtävänannossa ei erikseen kaavaa alkoholin palamiseen, käytin netistä löydettyä:
     let grams_left = grams - burnt_grams;
 
     // Jos tulos on negatiivinen, korvautuu nollaksi:
